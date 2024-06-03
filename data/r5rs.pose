@@ -854,103 +854,103 @@
 
 ((group
 
-((name "even?")
+  ((name "even?")
    (signature lambda ((integer? n)) boolean?)
    (tags pure predicate))
 
-((name "odd?")
+  ((name "odd?")
    (signature lambda ((integer? n)) boolean?)
    (tags pure predicate))
 
-((name "zero?")
+  ((name "zero?")
    (signature lambda ((number? z)) boolean?)
    (tags pure predicate))
 
-((name "positive?") (signature lambda ((real? x)) boolean?) (tags pure))
+  ((name "positive?") (signature lambda ((real? x)) boolean?) (tags pure))
 
-((name "negative?") (signature lambda ((real? x)) boolean?) (tags pure))))
+  ((name "negative?") (signature lambda ((real? x)) boolean?) (tags pure))))
 
 ((group
 
-((name "acos") (signature lambda ((number? z)) number?) (tags pure))
+  ((name "acos") (signature lambda ((number? z)) number?) (tags pure))
 
-((name "asin") (signature lambda ((number? z)) number?) (tags pure))
+  ((name "asin") (signature lambda ((number? z)) number?) (tags pure))
 
-((name "atan")
+  ((name "atan")
    (signature
     case-lambda
     (((number? z)) number?)
     (((real? y) (real? x)) number?))
    (tags pure))
 
-((name "cos") (signature lambda ((number? z)) number?) (tags pure))
+  ((name "cos") (signature lambda ((number? z)) number?) (tags pure))
 
-((name "exp") (signature lambda ((number? z)) number?) (tags pure))
+  ((name "exp") (signature lambda ((number? z)) number?) (tags pure))
 
-((name "log") (signature lambda ((number? z)) number?) (tags pure))
+  ((name "log") (signature lambda ((number? z)) number?) (tags pure))
 
-((name "sin") (signature lambda ((number? z)) number?) (tags pure))
+  ((name "sin") (signature lambda ((number? z)) number?) (tags pure))
 
-((name "tan") (signature lambda ((number? z)) number?) (tags pure))))
+  ((name "tan") (signature lambda ((number? z)) number?) (tags pure))))
 
 ((group
 
-((name "number?")
+  ((name "number?")
    (signature lambda (obj) boolean?)
    (tags pure predicate))
 
-((name "complex?")
+  ((name "complex?")
    (signature lambda (obj) boolean?)
    (tags pure predicate))
 
-((name "real?")
+  ((name "real?")
    (signature lambda (obj) boolean?)
    (tags pure predicate))
 
-((name "rational?")
+  ((name "rational?")
    (signature lambda (obj) boolean?)
    (tags pure predicate))
 
-((name "integer?")
+  ((name "integer?")
    (signature lambda (obj) boolean?)
    (tags pure predicate))))
 
 ((group
 
-((name "angle") (signature lambda ((complex? z)) real?) (tags pure))
+  ((name "angle") (signature lambda ((complex? z)) real?) (tags pure))
 
-((name "imag-part") (signature lambda ((complex? z)) real?) (tags pure))
+  ((name "imag-part") (signature lambda ((complex? z)) real?) (tags pure))
 
-((name "magnitude") (signature lambda ((complex? z)) real?) (tags pure))
+  ((name "magnitude") (signature lambda ((complex? z)) real?) (tags pure))
 
-((name "make-polar")
+  ((name "make-polar")
    (signature lambda ((real? x3) (real? x4)) complex?)
    (tags pure))
 
-((name "make-rectangular")
+  ((name "make-rectangular")
    (signature lambda ((real? x1) (real? x2)) complex?)
    (tags pure))
 
-((name "real-part") (signature lambda ((complex? z)) real?) (tags pure))))
+  ((name "real-part") (signature lambda ((complex? z)) real?) (tags pure))))
 
 ((group
 
-((name "char-alphabetic?")
+  ((name "char-alphabetic?")
    (signature lambda ((char? char)) boolean?)
    (tags pure))
 
-((name "char-numeric?")
+  ((name "char-numeric?")
    (signature lambda ((char? char)) boolean?)
    (tags pure))
 
-((name "char-whitespace?")
+  ((name "char-whitespace?")
    (signature lambda ((char? char)) boolean?)
    (tags pure))
 
-((name "char-upper-case?")
+  ((name "char-upper-case?")
    (signature lambda ((char? char)) boolean?)
    (tags pure))
 
-((name "char-lower-case?")
+  ((name "char-lower-case?")
    (signature lambda ((char? char)) boolean?)
    (tags pure))))
